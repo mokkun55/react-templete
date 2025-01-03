@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BaseProvider } from './providers/baseProvider'
-import { Router } from './router/Route'
+import { BaseProvider } from '@/providers/baseProvider'
+import { Router } from '@/router/Route'
 
 const rootElement = document.getElementById('root')
 if (!rootElement) {
