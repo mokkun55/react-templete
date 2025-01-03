@@ -11,4 +11,4 @@ pre-commit:
 
     tsc:
       glob: "*.{js,ts,tsx}"
-      run: pnpm tsc {stage_file}
+      run: pnpm tsc
