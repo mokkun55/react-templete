@@ -2,13 +2,13 @@ pre-commit:
   commands:
     biome-check:
       glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}"
-      run: pnpm run biome {stage_file}
+      run: pnpm lint {stage_file}
       stage_fixed: true
 
     spell-check:
       glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}"
-      run: pnpm run check-spell {stage_file}
+      run: pnpm check-spell
 
     tsc:
       glob: "*.{js,ts,tsx}"
-      run: pnpm run tsc {stage_file}
+      run: pnpm tsc {stage_file}
