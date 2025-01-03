@@ -1,5 +1,5 @@
 {
-  "name": "react-templete",
+  "name": "react-template",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,6 +12,7 @@
     "check-spell": "cspell \"src/**/*.ts\" \"src/**/*.tsx\" \"src/**/*.js\"",
     "tsc": "tsc --noEmit"
   },
+  "packageManager": "pnpm@9.9.0",
   "dependencies": {
     "@mantine/core": "^7.15.2",
     "@mantine/hooks": "^7.15.2",
