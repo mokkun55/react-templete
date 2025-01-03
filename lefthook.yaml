@@ -1,0 +1,9 @@
+pre-commit:
+  parallel: true
+  commands:
+    biome:
+      glob: "*.{js,ts,tsx}"
+      run: npx biome check {staged_files}
+    cspell:
+      glob: "*.{js,ts,tsx,md}"
+      run: npx cspell {staged_files}
