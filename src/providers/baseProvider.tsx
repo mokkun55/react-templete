@@ -1,5 +1,11 @@
-import type { ReactNode } from "react"
+import { MantineProvider } from '@mantine/core'
+import '@mantine/core/styles.css'
+import type { ReactNode } from 'react'
 
 export const BaseProvider = ({ children }: { children: ReactNode }) => {
-  return <div>{children}</div>
+  return (
+    <>
+      <MantineProvider>{children}</MantineProvider>
+    </>
+  )
 }
