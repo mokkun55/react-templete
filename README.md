@@ -1,50 +1,59 @@
-# React + TypeScript + Vite
+# React テンプレート
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+もっくんが個人開発でよく使うライブラリ等を詰め込んだリポジトリです。
 
-Currently, two official plugins are available:
+## 入っているもの
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### ライブラリ
+- vite
+  - 爆速ビルド
+- turbo
+  - 爆速タスク実行
+- react
+- react-router
+- typescript
+- mantine
+  - 最近個人的に流行ってるUIコンポーネント
+- sass
+- biome
+  - linter formatter どっちも使える優秀なヤツ
+- cspell
+- lefthook
+  - commit時に biome spellcheck tsc を動かしてます
+### 便利ツール
+- github actions
+  - biomeとtscをciで動かしてます
+- renovate
+  - ライブラリにアップデートがあれば、自動的にPRを作成してくれるヤツ
+### 推しポイント
+- 絶対パスでインポート
+  - @ で srcを起点にインポートできる
+  - 相対インポート地獄にならなくて良き
+- renovate
+  - いちいちアップデートを調べる必要が無いのは神
+- lefthook 
+  - huskyより爆速でcommit時にチェックしてくれるの助かる
 
-## Expanding the ESLint configuration
+## インストール
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. リポジトリをクローン:
+   ```bash
+   git clone <your-repo-url>
+   ```
+2. プロジェクトディレクトリに移動:
+   ```bash
+   cd react-template
+   ```
+3. pnpm を使用して依存関係をインストール:
+   ```bash
+   pnpm install
+   ```
+4. lefthookの設定
+   ```bash
+   lefthook install
+   ```
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+##  開発🎉
+   ```bash
+   pnpm dev
+   ```
