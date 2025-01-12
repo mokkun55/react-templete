@@ -38,7 +38,7 @@
 
 1. リポジトリをクローン:
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/mokkun55/react-templete.git
    ```
 2. プロジェクトディレクトリに移動:
    ```bash
