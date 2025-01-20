@@ -1,7 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base", ":disableDependencyDashboard"],
-  "automerge": false,
+  "automerge": true,
   "major": { "enabled": false },
-  "autoApprove": false,
 }
