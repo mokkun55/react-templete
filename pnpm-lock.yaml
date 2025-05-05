@@ -34,7 +34,7 @@ importers:
         version: 2.5.2
       vite-tsconfig-paths:
         specifier: ^5.1.4
-        version: 5.1.4(typescript@5.8.3)(vite@6.3.4(sass@1.87.0)(yaml@2.7.1))
+        version: 5.1.4(typescript@5.8.3)(vite@6.3.5(sass@1.87.0)(yaml@2.7.1))
     devDependencies:
       '@biomejs/biome':
         specifier: 1.9.4
@@ -47,7 +47,7 @@ importers:
         version: 18.3.7(@types/react@18.3.20)
       '@vitejs/plugin-react-swc':
         specifier: ^3.5.0
-        version: 3.9.0(vite@6.3.4(sass@1.87.0)(yaml@2.7.1))
+        version: 3.9.0(vite@6.3.5(sass@1.87.0)(yaml@2.7.1))
       cspell:
         specifier: ^8.17.1
         version: 8.19.4
@@ -62,7 +62,7 @@ importers:
         version: 5.8.3
       vite:
         specifier: ^6.0.5
-        version: 6.3.4(sass@1.87.0)(yaml@2.7.1)
+        version: 6.3.5(sass@1.87.0)(yaml@2.7.1)
 
 packages:
 
@@ -1339,8 +1339,8 @@ packages:
       vite:
         optional: true
 
-  vite@6.3.4:
-    resolution: {integrity: sha512-BiReIiMS2fyFqbqNT/Qqt4CVITDU9M9vE+DKcVAsB+ZV0wvTKd+3hMbkpxz1b+NmEDMegpVbisKiAZOnvO92Sw==}
+  vite@6.3.5:
+    resolution: {integrity: sha512-cZn6NDFE7wdTpINgs++ZJ4N49W2vRp8LCKrn3Ob1kYNtOo21vfDoaV5GzBfLU4MovSAB8uNRm4jgzVQZ+mBzPQ==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
     peerDependencies:
@@ -1948,10 +1948,10 @@ snapshots:
       '@types/prop-types': 15.7.14
       csstype: 3.1.3
 
-  '@vitejs/plugin-react-swc@3.9.0(vite@6.3.4(sass@1.87.0)(yaml@2.7.1))':
+  '@vitejs/plugin-react-swc@3.9.0(vite@6.3.5(sass@1.87.0)(yaml@2.7.1))':
     dependencies:
       '@swc/core': 1.11.21
-      vite: 6.3.4(sass@1.87.0)(yaml@2.7.1)
+      vite: 6.3.5(sass@1.87.0)(yaml@2.7.1)
     transitivePeerDependencies:
       - '@swc/helpers'
 
@@ -2476,18 +2476,18 @@ snapshots:
     optionalDependencies:
       '@types/react': 18.3.20
 
-  vite-tsconfig-paths@5.1.4(typescript@5.8.3)(vite@6.3.4(sass@1.87.0)(yaml@2.7.1)):
+  vite-tsconfig-paths@5.1.4(typescript@5.8.3)(vite@6.3.5(sass@1.87.0)(yaml@2.7.1)):
     dependencies:
       debug: 4.4.0
       globrex: 0.1.2
       tsconfck: 3.1.4(typescript@5.8.3)
     optionalDependencies:
-      vite: 6.3.4(sass@1.87.0)(yaml@2.7.1)
+      vite: 6.3.5(sass@1.87.0)(yaml@2.7.1)
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  vite@6.3.4(sass@1.87.0)(yaml@2.7.1):
+  vite@6.3.5(sass@1.87.0)(yaml@2.7.1):
     dependencies:
       esbuild: 0.25.3
       fdir: 6.4.4(picomatch@4.0.2)
