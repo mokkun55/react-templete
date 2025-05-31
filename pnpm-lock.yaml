@@ -28,13 +28,13 @@ importers:
         version: 7.6.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       sass:
         specifier: ^1.83.0
-        version: 1.89.0
+        version: 1.89.1
       turbo:
         specifier: ^2.3.3
         version: 2.5.4
       vite-tsconfig-paths:
         specifier: ^5.1.4
-        version: 5.1.4(typescript@5.8.3)(vite@6.3.5(sass@1.89.0)(yaml@2.7.1))
+        version: 5.1.4(typescript@5.8.3)(vite@6.3.5(sass@1.89.1)(yaml@2.7.1))
     devDependencies:
       '@biomejs/biome':
         specifier: 1.9.4
@@ -47,7 +47,7 @@ importers:
         version: 18.3.7(@types/react@18.3.23)
       '@vitejs/plugin-react-swc':
         specifier: ^3.5.0
-        version: 3.10.0(vite@6.3.5(sass@1.89.0)(yaml@2.7.1))
+        version: 3.10.0(vite@6.3.5(sass@1.89.1)(yaml@2.7.1))
       cspell:
         specifier: ^8.17.1
         version: 8.19.4
@@ -62,7 +62,7 @@ importers:
         version: 5.8.3
       vite:
         specifier: ^6.0.5
-        version: 6.3.5(sass@1.89.0)(yaml@2.7.1)
+        version: 6.3.5(sass@1.89.1)(yaml@2.7.1)
 
 packages:
 
@@ -1197,8 +1197,8 @@ packages:
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
 
-  sass@1.89.0:
-    resolution: {integrity: sha512-ld+kQU8YTdGNjOLfRWBzewJpU5cwEv/h5yyqlSeJcj6Yh8U4TDA9UA5FPicqDz/xgRPWRSYIQNiFks21TbA9KQ==}
+  sass@1.89.1:
+    resolution: {integrity: sha512-eMLLkl+qz7tx/0cJ9wI+w09GQ2zodTkcE/aVfywwdlRcI3EO19xGnbmJwg/JMIm+5MxVJ6outddLZ4Von4E++Q==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -1950,11 +1950,11 @@ snapshots:
       '@types/prop-types': 15.7.14
       csstype: 3.1.3
 
-  '@vitejs/plugin-react-swc@3.10.0(vite@6.3.5(sass@1.89.0)(yaml@2.7.1))':
+  '@vitejs/plugin-react-swc@3.10.0(vite@6.3.5(sass@1.89.1)(yaml@2.7.1))':
     dependencies:
       '@rolldown/pluginutils': 1.0.0-beta.9
       '@swc/core': 1.11.29
-      vite: 6.3.5(sass@1.89.0)(yaml@2.7.1)
+      vite: 6.3.5(sass@1.89.1)(yaml@2.7.1)
     transitivePeerDependencies:
       - '@swc/helpers'
 
@@ -2375,7 +2375,7 @@ snapshots:
       '@rollup/rollup-win32-x64-msvc': 4.40.1
       fsevents: 2.3.3
 
-  sass@1.89.0:
+  sass@1.89.1:
     dependencies:
       chokidar: 4.0.3
       immutable: 5.1.2
@@ -2476,18 +2476,18 @@ snapshots:
     optionalDependencies:
       '@types/react': 18.3.23
 
-  vite-tsconfig-paths@5.1.4(typescript@5.8.3)(vite@6.3.5(sass@1.89.0)(yaml@2.7.1)):
+  vite-tsconfig-paths@5.1.4(typescript@5.8.3)(vite@6.3.5(sass@1.89.1)(yaml@2.7.1)):
     dependencies:
       debug: 4.4.0
       globrex: 0.1.2
       tsconfck: 3.1.4(typescript@5.8.3)
     optionalDependencies:
-      vite: 6.3.5(sass@1.89.0)(yaml@2.7.1)
+      vite: 6.3.5(sass@1.89.1)(yaml@2.7.1)
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  vite@6.3.5(sass@1.89.0)(yaml@2.7.1):
+  vite@6.3.5(sass@1.89.1)(yaml@2.7.1):
     dependencies:
       esbuild: 0.25.3
       fdir: 6.4.4(picomatch@4.0.2)
@@ -2497,7 +2497,7 @@ snapshots:
       tinyglobby: 0.2.13
     optionalDependencies:
       fsevents: 2.3.3
-      sass: 1.89.0
+      sass: 1.89.1
       yaml: 2.7.1
 
   vscode-languageserver-textdocument@1.0.12: {}
